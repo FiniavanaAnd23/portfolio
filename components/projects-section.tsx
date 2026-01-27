@@ -1,60 +1,45 @@
 'use client'
 
+import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-
-const projects = [
-  {
-    id: 1,
-    title: 'Web Development',
-    category: 'Web Development',
-    image: '🌐',
-  },
-  {
-    id: 2,
-    title: 'Frontend Development',
-    category: 'Frontend',
-    image: '⚡',
-  },
-  {
-    id: 3,
-    title: 'Backend Development',
-    category: 'Backend',
-    image: '🔧',
-  },
-  {
-    id: 4,
-    title: 'Mobile App',
-    category: 'Mobile',
-    image: '📱',
-  },
-]
-
-const filters = ['All', 'Web Development', 'Mobile App', 'Frontend', 'Backend']
+import { useApp } from '@/context/app-context'
 
 export function ProjectsSection() {
+  const { t } = useApp()
+  const [selectedFilter, setSelectedFilter] = useState('All')
+
+  const filteredProjects = selectedFilter === 'All'
+    ? t.projects.items
+    : t.projects.items.filter(p => p.category === selectedFilter)
+
   return (
-    <section className="border-b border-border py-20 sm:py-32">
+    <section id="portfolio" className="border-b border-border py-20 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-12">
+        <div className="mb-12 animate-slide-down">
           <h2 className="mb-4 text-3xl font-bold text-foreground sm:text-4xl">
-            My <span className="text-accent">Latest</span> Projects
+            {t.projects.title.replace(/Latest/, (match) => `${match.split(' ')[0]} `)}
+            <span className="text-accent">
+              {t.projects.title.split(' ').slice(-2).join(' ')}
+            </span>
           </h2>
           <p className="max-w-2xl text-muted-foreground">
-            Greetings, fellow digital explorer! I am Wilkerson, a passionate and innovative developer dedicated to creating beautiful digital experiences.
+            {t.projects.description}
           </p>
         </div>
 
         {/* Filters */}
-        <div className="mb-12 flex flex-wrap gap-3">
-          {filters.map((filter) => (
+        <div className="mb-12 flex flex-wrap gap-3 animate-slide-up">
+          {t.projects.filters.map((filter, index) => (
             <Button
               key={filter}
-              variant={filter === 'All' ? 'default' : 'outline'}
+              onClick={() => setSelectedFilter(filter)}
+              variant={selectedFilter === filter ? 'default' : 'outline'}
               className={
-                filter === 'All'
+                selectedFilter === filter
                   ? 'bg-accent hover:bg-accent/90'
                   : 'border-border text-foreground hover:bg-secondary'
               }
+              style={{ animationDelay: `${index * 0.05}s` }}
             >
               {filter}
             </Button>
@@ -63,10 +48,11 @@ export function ProjectsSection() {
 
         {/* Projects Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {projects.map((project) => (
+          {filteredProjects.map((project, index) => (
             <div
-              key={project.id}
-              className="group overflow-hidden rounded-lg border border-border bg-card transition-all hover:border-accent"
+              key={index}
+              className="group overflow-hidden rounded-lg border border-border bg-card transition-all hover:border-accent hover:shadow-lg hover:shadow-accent/20 animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-video flex items-center justify-center bg-gradient-to-br from-accent/20 to-accent/5 group-hover:from-accent/30 group-hover:to-accent/10">
                 <span className="text-5xl">{project.image}</span>
@@ -81,8 +67,8 @@ export function ProjectsSection() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <Button className="bg-accent hover:bg-accent/90">See More</Button>
+        <div className="mt-12 text-center animate-slide-up" style={{ animationDelay: '0.5s' }}>
+          <Button className="bg-accent hover:bg-accent/90">{t.projects.viewMore}</Button>
         </div>
       </div>
     </section>

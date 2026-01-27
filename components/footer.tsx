@@ -1,33 +1,48 @@
-'use client'
+"use client";
 
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react'
+import { Github, Linkedin, Facebook, Mail, Gitlab } from "lucide-react";
+import { useApp } from "@/context/app-context";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const { t } = useApp();
+  const currentYear = new Date().getFullYear();
 
   const links = {
-    portfolios: [
-      { label: 'LinkedIn', href: '#' },
-      { label: 'Github', href: '#' },
-      { label: 'Twitter', href: '#' },
-      { label: 'Email', href: '#' },
+    quickLinks: [
+      { label: t.footer.portfolio, href: "#portfolio" },
+      { label: t.footer.about, href: "#about" },
+      { label: t.footer.blog, href: "#blog" },
+      { label: t.footer.contact, href: "#contact" },
     ],
-    resources: [
-      { label: 'Home', href: '#' },
-      { label: 'Contact', href: '#' },
-    ],
-    company: [
-      { label: 'Privacy Policy', href: '#' },
-      { label: 'Copyright', href: '#' },
-    ],
-  }
+  };
 
   const socials = [
-    { Icon: Github, label: 'GitHub', href: '#' },
-    { Icon: Linkedin, label: 'LinkedIn', href: '#' },
-    { Icon: Twitter, label: 'Twitter', href: '#' },
-    { Icon: Mail, label: 'Email', href: '#' },
-  ]
+    {
+      Icon: Gitlab,
+      label: "GitHub",
+      href: "https://gitlab.com/finiavanaandrianirina23",
+    },
+    {
+      Icon: Github,
+      label: "GitLab",
+      href: "https://github.com/FiniavanaAnd23",
+    },
+    {
+      Icon: Linkedin,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/finiavana-andrianirina-332313234/",
+    },
+    {
+      Icon: Facebook,
+      label: "Facebook",
+      href: "https://www.facebook.com/finiavana.andrianirina/",
+    },
+    {
+      Icon: Mail,
+      label: "Email",
+      href: "mailto:finiavanaandrianirina23@gmail.com",
+    },
+  ];
 
   return (
     <footer className="border-t border-border bg-background">
@@ -38,9 +53,11 @@ export function Footer() {
           <div>
             <div className="mb-2 flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent">
-                <span className="text-xs font-bold text-accent-foreground">W</span>
+                <span className="text-xs font-bold text-accent-foreground">
+                  W
+                </span>
               </div>
-              <span className="font-semibold text-foreground">Wilkerson</span>
+              <span className="font-semibold text-foreground">Finiavana</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Passionate developer crafting beautiful digital experiences.
@@ -48,25 +65,23 @@ export function Footer() {
           </div>
 
           {/* Links Sections */}
-          {Object.entries(links).map(([key, items]) => (
-            <div key={key}>
-              <h3 className="mb-4 font-semibold capitalize text-foreground">
-                {key}
-              </h3>
-              <ul className="space-y-2">
-                {items.map((item) => (
-                  <li key={item.label}>
-                    <a
-                      href={item.href}
-                      className="text-sm text-muted-foreground transition-colors hover:text-accent"
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div>
+            <h3 className="mb-4 font-semibold text-foreground">
+              {t.footer.quickLinks}
+            </h3>
+            <ul className="space-y-2">
+              {links.quickLinks.map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-accent"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Bottom Section */}
@@ -74,7 +89,7 @@ export function Footer() {
           <div className="flex flex-col items-center justify-between gap-8 sm:flex-row">
             {/* Copyright */}
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Wilkerson. All rights reserved.
+              © {currentYear} Finiavana. {t.footer.copyright}
             </p>
 
             {/* Social Icons */}
@@ -94,5 +109,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
