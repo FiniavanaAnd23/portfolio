@@ -91,28 +91,34 @@ export const translations = {
       title: 'My Education',
       items: [
         {
-          year: '2019 - 2020',
-          degree: 'Diploma Development',
+          year: '2017 - 2020',
+          degree: 'Professional Bachelor’s Degree in Computer Science',
           description:
-            'Greetings, fellow digital explorer! I am Finiavana, a passionate and innovative developer dedicated to crafting beautiful experiences. Welcome to my online sanctuary!',
+            'Professional training completed at the National School of Computer Science of Fianarantsoa (ENI), focused on a hands-on, job-oriented approach to software development. This training helped me build strong skills in programming, database management, web application development, as well as professional workflows and team collaboration. It represents the foundation of my technical expertise and my ability to work independently on real-world projects.',
         },
         {
           year: '2020 - 2022',
-          degree: 'Web Development',
+          degree: 'Professional Master’s Degree in Computer Science',
           description:
-            'Greetings, fellow digital explorer! I am Finiavana, a passionate and innovative developer dedicated to crafting beautiful experiences. Welcome to my online sanctuary!',
+            'Advanced professional training completed at the National School of Computer Science of Fianarantsoa (ENI), focused on the design, development, and management of complex software projects. It strengthens expertise in software architecture, frontend and backend development, databases, SaaS applications, as well as project management and technical decision-making. This training confirms my ability to design and lead complete, scalable, and reliable solutions.',
         },
       ],
     },
     skills: {
       title: 'My Skills',
       items: [
-        { name: 'Figma', percentage: 95 },
-        { name: 'HTML', percentage: 85 },
-        { name: 'CSS', percentage: 90 },
-        { name: 'JavaScript', percentage: 85 },
-        { name: 'User Interface', percentage: 95 },
-        { name: 'User Experience', percentage: 85 },
+        { name: 'Next JS', percentage: 80 },
+        { name: 'React JS', percentage: 75 },
+        { name: 'React Native', percentage: 70 },
+        { name: 'Nest JS', percentage: 85 },
+        { name: 'Node JS Express', percentage: 80 },
+        { name: 'MongoDB', percentage: 75 },
+        { name: 'PostgreSQL/MySQL', percentage: 85 },
+        { name: 'User Interface', percentage: 75 },
+        { name: 'User Experience', percentage: 80 },
+        { name: 'UI/UX', percentage: 70 },
+        { name: 'Agile SCRUM', percentage: 70 },
+        { name: 'JAVA Android', percentage: 70 },
       ],
     },
     projects: {
@@ -184,9 +190,9 @@ export const translations = {
         error: 'Failed to send message. Please try again.',
       },
       info: {
-        email: 'contact@Finiavana.dev',
-        phone: '+1 (555) 123-4567',
-        location: 'San Francisco, CA',
+        email: 'finiavanaandrianirina23@gmail.com',
+        phone: '+261 32 13 932 63 - +261 38 97 551 98',
+        location: 'CF 25 Faliarivo Ampitatafika Antananarivo',
       },
     },
     newsletter: {
@@ -312,28 +318,34 @@ export const translations = {
       title: 'Mon Éducation',
       items: [
         {
-          year: '2019 - 2020',
-          degree: 'Diplôme en Développement',
+          year: '2017 - 2020',
+          degree: 'Licence Professionnelle en Informatique Générale',
           description:
-            'Salutations, explorateur numérique! Je suis Finiavana, un développeur passionné et innovant dédié à créer de belles expériences. Bienvenue dans mon sanctuaire en ligne!',
+            'Formation professionnelle suivie à l’École Nationale d’Informatique de Fianarantsoa (ENI), axée sur une approche pratique et orientée métier du développement informatique. Cette formation m’a permis de développer des compétences solides en programmation, gestion de bases de données, développement d’applications web, ainsi qu’en méthodologies de travail professionnelles et travail en équipe. Elle constitue le socle de mon savoir-faire technique et de mon autonomie sur des projets concrets.',
         },
         {
           year: '2020 - 2022',
-          degree: 'Développement Web',
+          degree: 'Master Professionnel en Informatique Générale',
           description:
-            'Salutations, explorateur numérique! Je suis Finiavana, un développeur passionné et innovant dédié à créer de belles expériences. Bienvenue dans mon sanctuaire en ligne!',
+            'Formation de niveau avancé suivie à l’École Nationale d’Informatique de Fianarantsoa (ENI), orientée vers la conception, le développement et la gestion de projets logiciels complexes. Elle approfondit les compétences en architecture logicielle, développement frontend et backend, bases de données, applications SaaS, ainsi qu’en gestion de projet et décisions techniques. Cette formation confirme ma capacité à concevoir et piloter des solutions complètes, robustes et évolutives.',
         },
       ],
     },
     skills: {
       title: 'Mes Compétences',
       items: [
-        { name: 'Figma', percentage: 95 },
-        { name: 'HTML', percentage: 85 },
-        { name: 'CSS', percentage: 90 },
-        { name: 'JavaScript', percentage: 85 },
-        { name: 'Interface Utilisateur', percentage: 95 },
-        { name: 'Expérience Utilisateur', percentage: 85 },
+        { name: 'Next JS', percentage: 80 },
+        { name: 'React JS', percentage: 75 },
+        { name: 'React Native', percentage: 70 },
+        { name: 'Nest JS', percentage: 85 },
+        { name: 'Node JS Express', percentage: 80 },
+        { name: 'MongoDB', percentage: 75 },
+        { name: 'PostgreSQL/MySQL', percentage: 85 },
+        { name: 'Interface Utilisateur', percentage: 75 },
+        { name: 'Expérience Utilisateur', percentage: 80 },
+        { name: 'UI/UX', percentage: 70 },
+        { name: 'Agile SCRUM', percentage: 70 },
+        { name: 'JAVA Android', percentage: 70 },
       ],
     },
     projects: {
@@ -411,9 +423,9 @@ export const translations = {
         error: "Erreur lors de l'envoi. Veuillez réessayer.",
       },
       info: {
-        email: 'contact@Finiavana.dev',
-        phone: '+1 (555) 123-4567',
-        location: 'San Francisco, CA',
+        email: 'finiavanaandrianirina23@gmail.com',
+        phone: '+261 32 13 932 63 - +261 38 97 551 98',
+        location: 'CF 25 Faliarivo Ampitatafika Antananarivo',
       },
     },
     newsletter: {
