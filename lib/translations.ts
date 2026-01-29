@@ -124,29 +124,132 @@ export const translations = {
     projects: {
       title: 'My Latest Projects',
       description:
-        'Web developer specialized in frontend with Next.js and backend with NestJS, I design modern, high-performance, and maintainable applications, with a strong focus on user experience and code quality.',
+        'Explore my portfolio of completed projects showcasing my expertise in web development, design, and full-stack solutions.',
       filters: ['All', 'Web Development', 'Mobile App', 'Frontend', 'Backend'],
       viewMore: 'View More',
       items: [
         {
-          title: 'Web Development',
-          category: 'Web Development',
-          image: '🌐',
-        },
-        {
-          title: 'Frontend Development',
+          title: 'BackOffice Module for Hello Archi',
           category: 'Frontend',
-          image: '⚡',
+          image: '📊',
+          // image: '🛒',
+          description:
+            'For the Hello Archi project, I was responsible for the design and full development of the BackOffice module, focusing on creating a centralized, robust, and intuitive management system.',
+          technologies: [
+            'Next.js',
+            'React',
+            'Tanstack Query',
+            'Tailwind CSS',
+            'GitLab',
+            'Socket.io',
+          ],
+          tasks: [
+            'Integrated Commercial Management: Development of comprehensive quote and invoice management features, including their generation, tracking, automation, and secure archiving.',
+            'Unified Communication Platform: Integration of an internal messaging and transactional email system, enabling seamless and tracked communication with clients and internal teams.',
+            'Centralized Document Hub: Design of a dedicated space for the centralized management of documents (contracts, plans, technical files) with sorting, access control, and version tracking.',
+            'Structured Product Catalog: Implementation of a product and category management module, providing hierarchical organization, detailed records, and simplified catalog maintenance.',
+          ],
         },
         {
-          title: 'Backend Development',
+          title:
+            'Backend Architecture & API for a Car Rental Management SaaS (MVP)',
           category: 'Backend',
-          image: '🔧',
+          image: '⚙️',
+          description:
+            'Design and development of the server infrastructure and backend services for a car rental management SaaS platform. This robust technical foundation supported the essential business features of the MVP',
+          technologies: [
+            'NestJS',
+            'TypeScript',
+            'Swagger',
+            'JWT',
+            'MongoDB',
+            'GitLab',
+          ],
+          tasks: [
+            'Secure RESTful API: Development of a modular API with JWT authentication, fine-grained permission management (RBAC), and strict data validation to ensure system integrity.',
+            'Business Data Modeling: Design and implementation of the relational database schema for core entities: Clients, Vehicles (with status and history), Rental Contracts, Users, and Billing.',
+            'Centralized Business Logic: Implementation of the core algorithmic logic for critical processes: automatic pricing and fee calculation, real-time vehicle availability management, document generation (contracts, invoices), and transactional notifications.',
+            'Administration Services: Creation of secure endpoints powering the admin interface, enabling full CRUD management of the catalog, bookings, and clients, as well as access to aggregated analytical data.',
+            'Customer Services: Development of endpoints dedicated to the public user experience: browsing the catalog with filters, availability checks, booking submission, and customer account management.',
+          ],
         },
         {
-          title: 'Mobile App',
-          category: 'Mobile App',
-          image: '📱',
+          title:
+            'User Interfaces & Customer Experience for a Car Rental SaaS (MVP)',
+          category: 'Frontend',
+          image: '📊',
+          description:
+            'Development of interactive and responsive user interfaces for both user bases of the SaaS platform, consuming the backend API. The focus was on usability, performance, and adaptability.',
+          technologies: [
+            'Next.js',
+            'React',
+            'Tailwind',
+            'SCSS',
+            'Figma',
+            'Shadcn UI',
+          ],
+          tasks: [
+            'Administrative Dashboard: Design of a comprehensive management interface with KPI visualization (occupancy rate, revenue) and quick access to primary actions.',
+            'Intuitive Management Modules: Development of optimized CRUD interfaces for managing vehicles (photo galleries, technical sheets), clients, rentals (calendar view), and internal users.',
+            'Guided Workflows: Implementation of clear user journeys for complex tasks like creating a rental contract or processing a vehicle return.',
+            'Engaging Landing Page & Catalog: Creation of an attractive showcase for the vehicle fleet with advanced search filters (date, type, price) and an integrated booking system.',
+            'Smooth Booking Journey: Design of a multi-step funnel (selection, options, customer info, payment) to maximize conversion rates.',
+            'Personal Customer Portal: Development of a secure area where customers can view their past and upcoming bookings, download their documents, and update their profile.',
+          ],
+        },
+        {
+          title:
+            'Advanced Backend Architecture for Rental Management SaaS (Version 1.0)',
+          category: 'Backend',
+          image: '⚙️',
+          description:
+            'Development of the complete backend infrastructure for version 1.0 of the SaaS software, evolving from the MVP to a comprehensive and industrialized car rental management platform',
+          technologies: [
+            'NestJS',
+            'MongoDB',
+            'Swagger',
+            'Stripe API',
+            'Mangopay API',
+          ],
+          tasks: [
+            'API Overhaul and Consolidation: Correction and optimization of MVP endpoints to improve stability, performance, and maintainability. Migration to a microservices architecture for critical modules.',
+            'Digital Vehicle Inspection System: Design of a complete workflow for the entry, electronic signature, and archiving of vehicle check-in/check-out reports, including photo and remark management.',
+            'Advanced Billing Engine: Development of a module for generating, tracking, and managing quotes and invoices, incorporating VAT calculations, deposits, and automated reminders.',
+            'Centralized Configuration Hub: Creation of a dedicated service for application settings (pricing, taxes, email templates) and dynamically manageable legal information (Terms of Service, legal notices, policies).',
+            'Payments & Security Deposits with MangoPay: Full integration of the MangoPay API to manage transactions (cards, bank transfers) and the security deposit lifecycle (blocking, release, deduction in case of damage).',
+            'Subscriptions with Stripe: Implementation of a SaaS subscription system via Stripe, managing plans, recurring invoices, subscription changes, and webhooks for synchronization.',
+            'Enhanced Security & Compliance: Implementation of an audit trail, encryption of sensitive data (payment), and GDPR compliance for managing legal documents and customer data.',
+          ],
+        },
+        {
+          title: 'AI Content Generator',
+          category: 'Web Development',
+          image: '🤖',
+          description:
+            'Web application powered by AI to generate and customize content with user-friendly interface.',
+          technologies: ['Next.js', 'OpenAI API', 'React', 'Prisma', 'Vercel'],
+          tasks: [
+            'AI API integration',
+            'Content generation pipeline',
+            'User subscription system',
+            'Content storage and retrieval',
+            'Response streaming',
+          ],
+        },
+        {
+          title: 'Video Streaming Platform',
+          category: 'Frontend',
+          image: '📹',
+          description:
+            'Responsive video streaming platform with adaptive bitrate and user engagement features.',
+          technologies: ['React', 'HLS.js', 'WebRTC', 'Socket.io', 'FFmpeg'],
+          tasks: [
+            'Video player implementation',
+            'Adaptive streaming setup',
+            'User comments and likes',
+            'Search functionality',
+            'Video upload system',
+          ],
         },
       ],
     },
@@ -187,12 +290,16 @@ export const translations = {
         send: 'Send Message',
         sending: 'Sending...',
         success: 'Message sent successfully!',
+        invalid: 'Invalid',
         error: 'Failed to send message. Please try again.',
       },
       info: {
         email: 'finiavanaandrianirina23@gmail.com',
-        phone: '+261 32 13 932 63 - +261 38 97 551 98',
+        phone: '+261 32 13 932 63 / +261 38 97 551 98',
         location: 'CF 25 Faliarivo Ampitatafika Antananarivo',
+        location_label: 'Location',
+        phone_label: 'Phone',
+        email_label: 'Email',
       },
     },
     newsletter: {
@@ -351,7 +458,7 @@ export const translations = {
     projects: {
       title: 'Mes Derniers Projets',
       description:
-        'Salutations, explorateur numérique! Je suis Finiavana, un développeur passionné et innovant dédié à créer de belles expériences. Bienvenue dans mon sanctuaire en ligne!',
+        'Explorez mon portfolio de projets réalisés mettant en avant mon expertise en développement web, design et solutions full-stack.',
       filters: [
         'Tous',
         'Développement Web',
@@ -362,24 +469,127 @@ export const translations = {
       viewMore: 'Voir Plus',
       items: [
         {
-          title: 'Développement Web',
-          category: 'Développement Web',
-          image: '🌐',
-        },
-        {
-          title: 'Développement Frontend',
+          title: 'Module BackOffice pour Hello Archi',
           category: 'Frontend',
-          image: '⚡',
+          image: '📊',
+          description:
+            "Dans le cadre du projet Hello Archi, j'ai assuré la conception et le développement complet du module BackOffice, en me concentrant sur la création d'un système centralisé, robuste et intuitif.",
+          technologies: [
+            'Next.js',
+            'React',
+            'Tanstack Query',
+            'Tailwind CSS',
+            'GitLab',
+            'Socket.io',
+          ],
+          tasks: [
+            'Gestion Commerciale Intégrée : Développement des fonctionnalités complètes de gestion des devis et des factures, incluant leur génération, suivi, automatisation et archivage sécurisé.',
+            "Plateforme de Communication Unifiée : Intégration d'un système de messagerie interne et d'envoi d'emails transactionnels, permettant une communication fluide et tracée avec les clients et les équipes.",
+            "Hub de Gestion Documentaire : Conception d'un espace dédié à la gestion centralisée des documents (contrats, plans, fichiers techniques) avec classement, contrôle d'accès et suivi des versions.",
+            "Catalogue Produits Structuré : Mise en place d'un module de gestion des produits et de leurs catégories, offrant une organisation hiérarchique, des fiches détaillées et une maintenance simplifiée du catalogue.",
+          ],
         },
         {
-          title: 'Développement Backend',
+          title:
+            "Architecture Backend & API d'un SaaS de Gestion Locative Automobile (MVP)",
           category: 'Backend',
-          image: '🔧',
+          image: '⚙️',
+          description:
+            "Conception et développement de l'infrastructure serveur et des services backend pour une plateforme SaaS de gestion de location de voitures. Ce socle technique robuste a permis de supporter les fonctionnalités métier essentielles du MVP",
+          technologies: [
+            'NestJS',
+            'TypeScript',
+            'Swagger',
+            'JWT',
+            'MongoDB',
+            'GitLab',
+          ],
+          tasks: [
+            "API RESTful Sécurisée : Développement d'une API modulaire avec authentification JWT, gestion fine des permissions (RBAC) et validation stricte des données pour garantir l'intégrité du système.",
+            'Modélisation des Données Métier : Conception et implémentation du schéma de base de données relationnelle pour les entités centrales : Clients, Véhicules (avec états et historique), Contrats de Location, Utilisateurs et Facturation.',
+            'Logique Métier Centralisée : Implémentation du cœur algorithmique pour les processus critiques : calcul automatique des prix et frais, gestion de la disponibilité des véhicules en temps réel, génération des documents (contrats, factures) et envoi de notifications transactionnelles.',
+            "Services d'Administration: Création des endpoints sécurisés alimentant l'interface d'administration, permettant la gestion CRUD complète du catalogue, des réservations et des clients, ainsi que l'accès aux données analytiques agrégées.",
+            "Services Client: Développement des endpoints dédiés à l'expérience utilisateur publique : consultation du catalogue avec filtres, vérification de disponibilité, soumission de réservation et gestion du compte client.",
+          ],
         },
         {
-          title: 'Application Mobile',
-          category: 'Application Mobile',
-          image: '📱',
+          title:
+            "Interfaces Utilisateur & Expérience Client d'un SaaS de Location de Voiture (MVP)",
+          category: 'Frontend',
+          image: '📊',
+          description:
+            "Développement des interfaces utilisateur interactives et responsives pour les deux publics de la plateforme SaaS, en consommant l'API backend. L'accent a été mis sur l'ergonomie, la performance et l'adaptabilité.",
+          technologies: [
+            'Next.js',
+            'React',
+            'Tailwind',
+            'SCSS',
+            'Figma',
+            'Shadcn UI',
+          ],
+          tasks: [
+            "Tableau de Bord Administratif : Conception d'une interface de gestion complète avec visualisation des KPIs (taux d'occupation, revenus) et accès rapide aux principales actions.",
+            "Modules de Gestion Intuitifs : Développement d'interfaces CRUD optimisées pour la gestion des véhicules (galeries photos, fiches techniques), des clients, des locations (calendrier de vue) et des utilisateurs internes.",
+            "Workflows Guidés : Mise en place de parcours utilisateur clairs pour les tâches complexes comme la création d'un contrat de location ou la gestion d'un retour de véhicule.",
+            "Landing Page & Catalogue Engagant : Création d'une vitrine attractive présentant la flotte de véhicules avec des filtres de recherche avancés (date, type, prix) et un système de réservation intégré.",
+            "Parcours de Réservation Fluide : Conception d'un tunnel en étapes progressives (sélection, options, informations client, paiement) pour maximiser le taux de conversion.",
+            "Espace Client Personnel (Customer Portal) : Développement d'une zone sécurisée où les clients peuvent visualiser leurs réservations passées et à venir, télécharger leurs documents et modifier leur profil.",
+          ],
+        },
+        {
+          title:
+            'Architecture Backend Avancée pour SaaS de Gestion Locative (Version 1.0)',
+          category: 'Backend',
+          image: '⚙️',
+          // image: '💪',
+          description:
+            "Développement de l'infrastructure backend complète de la version 1.0 du logiciel SaaS, évoluant du MVP vers une plateforme de gestion locative automobile complète et industrialisée",
+          technologies: [
+            'NestJS',
+            'MongoDB',
+            'Swagger',
+            'Stripe API',
+            'Mangopay API',
+          ],
+          tasks: [
+            "Refonte et Consolidation de l'API : Rectification et optimisation des endpoints du MVP pour améliorer la stabilité, les performances et la maintenabilité. Migration vers une architecture microservices pour les modules critiques.",
+            "Système d'États des Lieux Numériques : Conception d'un workflow complet pour la saisie, la signature électronique et l'archivage des états des lieux d'entrée et de sortie des véhicules, avec gestion des photos et des remarques.",
+            "Moteur de Facturation Avancé : Développement d'un module de génération, suivi et gestion des devis et factures, intégrant les calculs de TVA, les acomptes et les relances automatisées.",
+            "Hub de Configuration Centralisé : Création d'un service dédié aux paramètres de l'application (tarifs, taxes, emails type) et aux informations légales (CGU, mentions légales, politiques) dynamiquement administrables.",
+            "Paiements & Cautions avec MangoPay : Intégration complète de l'API MangoPay pour la gestion des transactions (cartes, virements) et du cycle de vie des cautions (blocage, restitution, prélèvement en cas de dommage).",
+            "Abonnements avec Stripe : Implémentation d'un système de subscription SaaS via Stripe, gérant les plans, les factures récurrentes, les changements d'abonnement et les webhooks pour la synchronisation.",
+            "Sécurité et Conformité Renforcées : Mise en place d'un audit trail, chiffrement des données sensibles (paiement) et conformité au RGPD pour la gestion des documents légaux et des données clients.",
+          ],
+        },
+        {
+          title: 'Générateur de Contenu IA',
+          category: 'Développement Web',
+          image: '🤖',
+          description:
+            "Application web alimentée par l'IA pour générer et personnaliser du contenu.",
+          technologies: ['Next.js', 'OpenAI API', 'React', 'Prisma', 'Vercel'],
+          tasks: [
+            'Intégration API IA',
+            'Pipeline de génération de contenu',
+            "Système d'abonnement utilisateur",
+            'Stockage et récupération de contenu',
+            'Diffusion de réponses',
+          ],
+        },
+        {
+          title: 'Plateforme de Streaming Vidéo',
+          category: 'Frontend',
+          image: '📹',
+          description:
+            'Plateforme de streaming vidéo responsive avec débit adaptatif et fonctionnalités engagement.',
+          technologies: ['React', 'HLS.js', 'WebRTC', 'Socket.io', 'FFmpeg'],
+          tasks: [
+            'Implémentation lecteur vidéo',
+            'Configuration streaming adaptatif',
+            'Commentaires et likes utilisateurs',
+            'Fonctionnalité de recherche',
+            "Système d'upload vidéo",
+          ],
         },
       ],
     },
@@ -420,12 +630,16 @@ export const translations = {
         send: 'Envoyer',
         sending: 'Envoi en cours...',
         success: 'Message envoyé avec succès!',
+        invalid: 'Invalide',
         error: "Erreur lors de l'envoi. Veuillez réessayer.",
       },
       info: {
         email: 'finiavanaandrianirina23@gmail.com',
-        phone: '+261 32 13 932 63 - +261 38 97 551 98',
+        phone: '+261 32 13 932 63 / +261 38 97 551 98',
         location: 'CF 25 Faliarivo Ampitatafika Antananarivo',
+        location_label: 'Adresse',
+        phone_label: 'Téléphone',
+        email_label: 'Email',
       },
     },
     newsletter: {

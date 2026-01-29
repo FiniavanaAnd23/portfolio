@@ -79,7 +79,7 @@ export function HeroSection() {
           >
             <div className="relative h-[28rem] w-[22rem] sm:h-[32rem] sm:w-[26rem]">
               <Image
-                src="/image/profile.png"
+                src="/images/profile.png"
                 alt="Finiavana – Web Developer"
                 fill
                 priority
